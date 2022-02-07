@@ -28,7 +28,7 @@ SET time_zone = "+00:00";
 -- Table structure for table `players`
 --
 
-CREATE TABLE `players` (
+CREATE TABLE `players kopie` (
   `id` int(7) DEFAULT NULL,
   `name` varchar(22) DEFAULT NULL,
   `age` int(3) DEFAULT NULL,
@@ -42,7 +42,7 @@ CREATE TABLE `players` (
 -- Dumping data for table `players`
 --
 
-INSERT INTO `players` (`id`, `name`, `age`, `nationality`, `club`, `value`, `wage`) VALUES
+INSERT INTO `players kopie` (`id`, `name`, `age`, `nationality`, `club`, `value`, `wage`) VALUES
 (41, 'Iniesta ', 33, 'Spain ', 'FC Barcelona ', 295000000, 260000),
 (7763, 'A. Pirlo ', 38, 'Italy ', 'New York City Football Club ', 4000000, 10000),
 (20289, 'Y. Tour  ', 34, 'Ivory Coast ', 'Manchester City ', 125000000, 145000),
