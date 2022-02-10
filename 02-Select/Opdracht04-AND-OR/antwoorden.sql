@@ -163,12 +163,11 @@ Joel Pereira 	21	Manchester United
 A. Christensen 	21	Chelsea 	
 
 -- Opdracht 12
-SELECT name, club FROM `players` WHERE age>40 AND wage>10000;
+SELECT name, club FROM `players` WHERE age >= 40 AND wage >= 10000;
 
 geen resultaten
 -- Opdracht 13
 SELECT * FROM `players` WHERE nationality="Netherlands" AND (club="Ajax" OR club="FC Utrecht");
-
 
 id	name	age	nationality	club	value	wage	
 148803	K. Huntelaar 	33	Netherlands 	Ajax 	55000000	17000	
@@ -177,25 +176,26 @@ id	name	age	nationality	club	value	wage
 169808	U. Emanuelson 	31	Netherlands 	FC Utrecht 	48000000	13000	
 172850	R. Leeuwin 	29	Netherlands 	FC Utrecht 	18000000	9000	
 186452	S. de Jong 	28	Netherlands 	Ajax 	75000000	16000	
-190947	D. Jensen 	25	Denmark 	FC Utrecht 	6000000	9000	
 193440	N. Viergever 	27	Netherlands 	Ajax 	65000000	14000	
-193706	D. Dumi? 	25	Bosnia Herzegovina 	FC Utrecht 	33000000	8000	
-197981	S. Makienok 	26	Denmark 	FC Utrecht 	11000000	8000	
 198147	M. van der Maarel 	27	Netherlands 	FC Utrecht 	1000000	7000	
-198640	Z. Labyad 	24	Morocco 	FC Utrecht 	85000000	11000	
 200698	N. Marsman 	26	Netherlands 	FC Utrecht 	875000	6000	
-202547	J. Bahebeck 	24	France 	FC Utrecht 	4000000	42000	
-203446	A. Kali 	26	Morocco 	FC Utrecht 	37000000	9000	
-204102	Y. Ayoub 	23	Morocco 	FC Utrecht 	10000000	13000	
 204367	B. van Leer 	25	Netherlands 	Ajax 	7000000	11000	
 204370	S. van de Streek 	24	Netherlands 	FC Utrecht 	23000000	8000	
 208004	J. Veltman 	25	Netherlands 	Ajax 	85000000	13000	
 208459	M. Dijks 	24	Netherlands 	Ajax 	55000000	10000	
 209696	C. David 	24	Netherlands 	FC Utrecht 	500000	2000	
-213696	M. Willock 	20	England 	FC Utrecht 	475000	14000	
 216380	D. Sinkgraven 	21	Netherlands 	Ajax 	75000000	9000	
 219814	S. Klaiber 	22	Netherlands 	FC Utrecht 	26000000	7000	
 221283	A. Nouri 	20	Netherlands 	Ajax 	75000000	10000	
+221363	D. van de Beek 	20	Netherlands 	Ajax 	115000000	12000	
+223811	N. Alblas 	22	Netherlands 	Ajax 	675000	2000	
+224217	R. van der Meer 	22	Netherlands 	FC Utrecht 	850000	6000	
+225653	G. Kerk 	21	Netherlands 	FC Utrecht 	25000000	8000	
+228568	P. Joosten 	21	Netherlands 	FC Utrecht 	11000000	7000	
+228702	F. de Jong 	20	Netherlands 	Ajax 	5000000	7000	
+228762	G. Troup e 	19	Netherlands 	FC Utrecht 	32000000	4000	
+234198	D. Dankerlui 	20	Netherlands 	Ajax 	500000	2000	
+
 
 -- Opdracht 14
 SELECT * FROM `players` WHERE nationality="England" AND age>20 AND wage>100000;
@@ -220,24 +220,24 @@ id	name	age	nationality	club	value	wage
 211117	D. Alli 	21	England 	Tottenham Hotspur 	43000000	115000	
 
 -- Opdracht 15
-SELECT * FROM `players` WHERE nationality="England" AND age>20 AND wage>100000;
+SELECT name, age, nationality FROM `players` WHERE age > 25 AND (nationality = "Brazil" OR nationality = "Argentina");
 
-
-id	name	age	nationality	club	value	wage	
-138412	J. Milner 	31	England 	Liverpool 	95000000	110000	
-164468	G. Cahill 	31	England 	Chelsea 	21000000	160000	
-171833	D. Sturridge 	27	England 	Liverpool 	235000000	140000	
-180819	A. Lallana 	29	England 	Liverpool 	25000000	135000	
-183427	F. Delph 	27	England 	Manchester City 	10000000	110000	
-183711	J. Henderson 	27	England 	Liverpool 	215000000	115000	
-186132	D. Drinkwater 	27	England 	Chelsea 	14000000	125000	
-188377	K. Walker 	27	England 	Manchester City 	24000000	130000	
-189881	C. Smalling 	27	England 	Manchester United 	17000000	120000	
-190456	N. Clyne 	26	England 	Liverpool 	22000000	115000	
-194957	P. Jones 	25	England 	Manchester United 	125000000	115000	
-198784	A. Oxlade-Chamberlain 	23	England 	Liverpool 	20000000	105000	
-202126	H. Kane 	23	England 	Tottenham Hotspur 	59000000	165000	
-202652	R. Sterling 	22	England 	Manchester City 	295000000	140000	
-203574	J. Stones 	23	England 	Manchester City 	145000000	105000	
-211117	D. Alli 	21	England 	Tottenham Hotspur 	43000000	115000	
-
+name	            age	        nationality	
+J. Speroni          38          Argentina 
+Fernandinho         32          Brazil 
+Kak                 35          Brazil 
+W. Caballero        35          Argentina 
+J. Mascherano       33          Argentina 
+S. Ag ero           29          Argentina 
+L. Messi            30          Argentina 
+E. Garay            30          Argentina 
+S. Romero           30          Argentina 
+Marcelo             29          Brazil 
+David Luiz          30          Brazil 
+Willian             28          Brazil 
+M. Moralez          30          Argentina 
+Paulinho            28          Brazil 
+N. Otamendi         29          Argentina 
+Neto                27          Brazil 
+Gabriel Paulista    26          Brazil 
+M. Rojo             27          Argentina 
