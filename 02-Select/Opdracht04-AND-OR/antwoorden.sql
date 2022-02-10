@@ -167,7 +167,7 @@ SELECT name, club FROM `players` WHERE age>40 AND wage>10000;
 
 geen resultaten
 -- Opdracht 13
-SELECT * FROM `players` WHERE nationality="Netherlands" AND club="Ajax" OR club="FC Utrecht";
+SELECT * FROM `players` WHERE nationality="Netherlands" AND (club="Ajax" OR club="FC Utrecht");
 
 
 id	name	age	nationality	club	value	wage	
