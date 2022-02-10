@@ -21,9 +21,10 @@ SELECT AVG(NA_Sales) gemiddelde_verkopen_NA, AVG(EU_Sales) gemiddelde_verkopen_E
 -- Opdracht 11
 DELETE FROM `videogamesales` WHERE name = "Halo 2" AND platform = "XB";
 -- Opdracht 12
-
+DELETE FROM `videogamesales` WHERE publisher = "Ubisoft" OR year = "2012";
 -- Opdracht 13
-
+DELETE FROM `videogamesales` WHERE publisher = "Nintendo" AND genre = "Adventure";
 -- Opdracht 14
-
+DELETE FROM `videogamesales` WHERE publisher = "Nintendo" AND Global_Sales < 1000;
 -- Opdracht 15
+DELETE FROM `videogamesales` WHERE year = 1997 AND NA_Sales > 200;
